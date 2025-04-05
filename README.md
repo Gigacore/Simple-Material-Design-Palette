@@ -1,4 +1,4 @@
-Simple Material Design Color Palette 
+Simple Material Design Color Palette
 ============
 ###### Extension for Google Chrome
 
@@ -8,12 +8,13 @@ A no-nonsense palette for Google's Material Design Colors that you can access ri
 
 ![Screenshot](http://i.imgur.com/RsO3UzQ.jpgg)
 
-
 Available on Chrome Web Store
 ==============
 ###### Download: 
 
 https://chrome.google.com/webstore/detail/simple-material-design-pa/onaeadclbaeleijcfmmhopgmmmpedifa
+
+Originally published here: https://github.com/keplerlab/Interactive/tree/master/material-colors-palette
 
 License
 ===================
