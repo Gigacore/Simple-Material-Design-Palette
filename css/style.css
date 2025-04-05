@@ -1,0 +1,223 @@
+/** 
+    Simple Material Design Color Palette Extension for Chrome
+    Author: Santhosh Sundar
+    Organization: SapientNitro
+    URL: http://gigacore.in
+**/
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'roboto';
+    src: url("fonts/Roboto-Condensed.ttf") format("truetype");
+}
+
+#wrap {
+    width: 236px;
+    position: relative;
+}
+
+.main {
+    color: #fff;
+    padding: 3px;
+    position: relative;
+}
+
+.main ul li {
+    height: 30px;
+    cursor: pointer;
+    font-size: 12px;
+    line-height: 30px;
+    padding: 0 10px 0 10px;
+    text-transform: uppercase;
+    font-family: 'roboto';
+    width: auto;
+    list-style: none;
+}
+
+.main ul li.dark {
+    color: #000;
+}
+
+.main ul li.divide {
+    border-top: solid 3px #fff;
+}
+
+.main ul li span.name {
+    display: list-item;
+}
+
+.main ul li span.hex {
+    display: none;
+}
+
+.main ul li:hover span.hex {
+    display: block;
+    transition: display 0.3s ease-in-out;
+}
+
+.color {
+    display: flex;
+    justify-content: space-between;
+}
+
+.color.main-color {
+   flex-direction: column;
+   height: 70px;
+   line-height: 35px;
+}
+
+.color.main-color .hex {
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+
+.color-set {
+    margin: 1px 0 0 0;
+    height: 25px;
+    cursor: pointer;
+    position: relative;
+    border-radius: 3px;
+}
+
+.color-set.active:after {
+    content: "";
+    position: absolute;
+    top: 7px;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-right: 5px solid #fff;
+    right: 0;
+}
+
+.color-wrap {
+    margin-bottom: 10px;
+    display: none;
+    position: absolute;
+    width: 200px;
+    top: 4px;
+    right: 5px;
+    margin: 0;
+    opacity: 0;
+}
+
+.color-wrap.show {
+    display: block;
+    opacity: 1;
+}
+
+.color-wrap li:hover {
+    transform: translateX(0);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.color-wrap li:first-child {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.color-wrap li:last-child {
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.color-wrap span.dark {
+    color: #000;
+}
+
+.color-wrap.red {
+    display: block;
+}
+
+a.color-link {
+    color: #fff;
+    font-family: 'roboto';
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 10px;
+    line-height: 30px;
+    padding: 0 0 0 10px;
+}
+
+.color-list {
+    width: 25px;
+}
+
+#toast {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    font-family: 'roboto';
+    text-transform: uppercase;
+    font-size: 10px;
+    margin: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 7px;
+    border-radius: 6px;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+#toast.show {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+#toggles {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    margin: 0 auto;
+    font-family: 'roboto', sans-serif;
+    text-align: center;
+    padding: 5px 0;
+}
+
+#toggles ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 5px;
+}
+
+#toggles ul li {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    border: 1px solid #ccc;
+    width: 60px;
+    cursor: pointer;
+    font-size: 14px;
+    height: 24px;
+    line-height: 30px;
+    border-radius: 10px;
+    background: #fff;
+    transition: all 0.3s ease;
+}
+
+#toggles ul li:hover {
+    background: #e0e0e0;
+    border-color: #bdbdbd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#toggles ul li.active {
+    background: #e0e0e0;
+    color: #000;
+    border: solid 1px #e0e0e0;
+}

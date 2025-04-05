@@ -14,7 +14,13 @@ Available on Chrome Web Store
 
 https://chrome.google.com/webstore/detail/simple-material-design-pa/onaeadclbaeleijcfmmhopgmmmpedifa
 
+
+History
+==============
+
 Originally published here: https://github.com/keplerlab/Interactive/tree/master/material-colors-palette
+
+Verion 2.0.0 is ported from jQuery to vanialla JS
 
 License
 ===================
