@@ -1,6 +1,6 @@
 // Simple Material Design Color Palette Extension for Chrome
 // Author: Santhosh Sundar
-// Organization: SapientNitro
+// Organization: Publicis Sapient
 // URL: http://gigacore.in
 
 (function() {
