@@ -20,7 +20,7 @@ History
 
 Originally published here: https://github.com/keplerlab/Interactive/tree/master/material-colors-palette
 
-Verion 2.0.0 is ported from jQuery to vanialla JS
+Verion 2.0.0 is ported from jQuery to vanilla JS
 
 License
 ===================
